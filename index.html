@@ -16,6 +16,10 @@
     height: 180px;
     background: rgb(249, 201, 54);
     position: absolute;
+    top: 45%;
+    left: 10%;
+    z-index: 80;
+    
   }
   .bottom {
     width: 100%;
@@ -27,19 +31,49 @@
   .brand {
     color: blue; 
     font-family: "Corben", sans-serif; 
+    font-size: 30;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 25%;
   }
 	.cup {
-    background: linear-gradient(90deg, rgba(6,27,150,1) 50%, rgba(255,255,255,1) 50%);
+    background-image: linear-gradient(180deg, rgba(6,27,150,1) 50%, rgba(255,255,255,1) 50%);
     width: 90px;
     height: 100px;
     position: relative;
-    right: 300px;
-    top: -200;
+    right: 280px;
+    top: 80;
+    z-index: 85;
+    border: 1px solid grey;
   }
-  
+  .coffeepot {
+    background: rgb(255, 99, 0);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    bottom: 308px;
+    right: 297px;
+  }
+  .metal {
+    background: hsl(0, 0%, 71%);
+    width: 150px;
+    height: 100px;
+    border-radius: 10% 10% 0% 0%;
+    position: relative;
+    top: 100;
+    right: 300px;
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+  }
+  .table {
+    background: tan;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+    transform: skew(5deg);
+  }
 </style>
 
 <div class="frame">
@@ -47,6 +81,10 @@
  	 	<div class="brand">Cafe Bustelo</div>
   	<div class="bottom"></div>
   </div>
+  <div class="table"></div>
 </div>
 
 <div class="cup"></div>
+
+<div class="coffeepot"></div>
+<div class="metal"></div>
