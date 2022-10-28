@@ -16,7 +16,7 @@
     width: 150px;
     height: 190px;
     background: rgb(249, 201, 54);
-    top: 47%;
+    top: 45%;
     left: 23%;
     z-index: 80;
   }
@@ -43,21 +43,24 @@
     top: 15%;
     left: 25%;
   }
-/* 	.cup {
+	.cup {
+    position: relative;
     background-image: linear-gradient(180deg, rgba(6,27,150,1) 50%, rgba(255,255,255,1) 50%);
     width: 90px;
     height: 100px;
-    position: relative;
-    right: 280px;
-    top: 80;
+    border-radius: 5px; 
+    right: 380px;
+    top: -90;
     z-index: 85;
     border: 1px solid grey;
-  } */
+    background-size: 30px 30px;
+    background-repeat: repeat;
+  }
   .coffeepotBody {
     position: absolute;
     background: rgb(255, 99, 0);
     width: 175px;
-    height: 175px;
+    height: 160px;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     border-radius: 30px 30px 50px 50px;
   	bottom: 325px;
@@ -67,7 +70,7 @@
     content: "";
     position: absolute;
     width: 50px;
-    height: 175px;
+    height: 160px;
     background: hsl(23, 100%, 37%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     border-radius: 30px 0px 0px 50px;
@@ -76,7 +79,7 @@
     content: "";
     position: absolute;
     width: 50px;
-    height: 175px;
+    height: 160px;
     background: hsl(23, 100%, 37%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     border-radius: 30px 0px 0px 50px;
@@ -87,9 +90,9 @@
     position: absolute;
     background: rgb(255, 99, 0);
     width: 120px;
-    height: 30px;
+    height: 20px;
     border-radius: 3px;
-    bottom: 300px;
+    bottom: 310px;
     right: 227px;
     z-index: 20;
   }
@@ -97,7 +100,7 @@
     position: absolute;
     background: #000;
     width: 30px;
-    height: 150px;
+    height: 135px;
     right: 72px;
     bottom: 5px;
     border-radius: 10px;
@@ -110,16 +113,16 @@
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     border-radius: 20px 20px 20px 20px;
     left: 447px;
-    top: 176px;
+    top: 191px;
   }
   .metal {
     position: absolute;
     background: hsl(0, 0%, 71%);
     width: 150px;
-    height: 100px;
+    height: 85px;
     border-radius: 30px 30px 5px 5px;
     clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
-    bottom: 203px;
+    bottom: 227px;
     right: 212px;
     z-index: 10;
   }
@@ -142,9 +145,10 @@
 		<div class="bottom"></div>
   </div>
   
-  <div class="coffeepotBody">
-  	  <div class="handle"></div>
+  <div class="coffeepotBody"> 
+    <div class="handle"></div>
   </div>
+  
   <div class="coffeepotRim"></div>
 	<div class="metal"></div>
   <div class="table"></div>
