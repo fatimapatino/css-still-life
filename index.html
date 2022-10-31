@@ -1,4 +1,8 @@
 <style>
+  @font-face {
+    font-family: "Corben";
+    src: url("Corben-Bold.ttf");
+  }
   body{
     display: flex;
     justify-content: center;
@@ -10,6 +14,7 @@
     border: 1px solid black;
     width: 500px;
     height: 500px;
+		position: relative;
   }
   .bustelo {
   	position: absolute;
@@ -39,6 +44,7 @@
   .brand {
     color: blue; 
     font-family: "Corben", sans-serif; 
+    
     font-size: 30;
     position: absolute;
     top: 15%;
@@ -120,8 +126,8 @@
     height: 160px;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
     border-radius: 30px 30px 50px 50px;
-  	bottom: 325px;
-    right: 200px;
+  	bottom: 215px;
+    right: 60px;
   }
   .coffeepotBody::after {
     content: "";
@@ -155,7 +161,7 @@
   }
   .handle {
     position: absolute;
-    background: #000;
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 44%, rgba(135,121,109,1) 65%, rgba(0,0,0,1) 91%);
     width: 30px;
     height: 135px;
     right: 72px;
@@ -174,7 +180,7 @@
   }
   .metal {
     position: absolute;
-    background: hsl(0, 0%, 71%);
+    background-image: linear-gradient(90deg, rgba(191,193,208,1) 38%, rgba(230,232,238,1) 65%, rgba(191,193,208,1) 91%); 
     width: 150px;
     height: 85px;
     border-radius: 30px 30px 5px 5px;
@@ -182,6 +188,17 @@
     bottom: 227px;
     right: 212px;
     z-index: 10;
+  }
+  .metal::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-image: radial-gradient(circle, rgba(252,252,254,1) 11%, rgba(230,232,238,1) 100%);
+    filter: blur(5px);
+    border-radius: 4px;
+    bottom: 32px;
+    right: 35px;
   }
  
 </style>
@@ -209,10 +226,12 @@
 	<div class="metal"></div>
   <div class="knob"></div>
   
+  <div class="cup1"></div>
+  <div class="cup2"></div>
+  <div class="cup3"></div>
+  
 </div>
 
-<div class="cup1"></div>
-<div class="cup2"></div>
-<div class="cup3"></div>
+
 
 
